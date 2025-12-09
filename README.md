@@ -1,137 +1,127 @@
-# Fleetora
-🚀 Fleetora – Real-Time Logistics & Food Delivery Platform
+# 🚀 Fleetora  
 
-A full-scale, Uber Eats level multi-role delivery ecosystem.
+> Real-Time Logistics & Delivery Platform  
 
-<p align="center"> <img src="https://img.shields.io/badge/Platform-Logistics%20%2F%20Delivery-blue.svg" /> <img src="https://img.shields.io/badge/Status-In%20Development-orange.svg" /> <img src="https://img.shields.io/badge/Tech-Real%20Time%20Tracking-success.svg" /> <img src="https://img.shields.io/badge/Architecture-High%20Demanding-critical.svg" /> </p>
+<p align="center">  
+  <!-- Optional project banner or logo -->  
+  <!-- <img src="path/to/your/banner.png" alt="Fleetora banner" width="800" /> -->  
+</p>  
 
-🌍 Overview
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)  
+[![Status: WIP](https://img.shields.io/badge/Status-WIP-yellow.svg)](#)  
+[![Contributors](https://img.shields.io/badge/Contributors-1-yellowgreen.svg)](#)  
 
-Fleetora is a powerful, real-time logistics and food delivery platform designed to operate at the same complexity level as Uber Eats, DoorDash, and Glovo.
+---
 
-It supports a three-sided marketplace:
+## 📄 Table of Contents  
 
-🏪 Restaurants/Vendors
+- [Overview](#overview)  
+- [Core Features](#core-features)  
+- [Role Capabilities](#role-capabilities)  
+  - [Restaurants / Vendors](#restaurants--vendors)  
+  - [Customers](#customers)  
+  - [Riders](#riders)  
+- [Architecture Overview](#architecture-overview)  
+- [Why Fleetora?](#why-fleetora)  
+- [What’s Next / Roadmap](#whats-next--roadmap)  
+- [License](#license)  
 
-🛍️ Customers
+---
 
-🛵 Riders
+## 🌍 Overview  
 
-The system includes real-time GPS tracking, automated dispatch, dynamic route updates, secure chat, full payment workflow, and a robust order lifecycle.
+Fleetora is a modern, high-performance logistics and food-delivery platform designed to operate at the same level as leading apps like Uber Eats, DoorDash and Glovo. It handles a three-sided marketplace enabling real-time coordination among **Restaurants**, **Customers**, and **Riders**.
 
-⚡ Core Features
-🔵 Real-Time Tracking
+The platform brings together live driver tracking, smart dispatching, full lifecycle order management, secure payments, and real-time communication — all built for speed, reliability, and scale.
 
-Live GPS movement
+---
 
-Driver progress updates
+## ⚡ Core Features  
 
-Delivery status in real time
+- **Real-Time Tracking** – Live GPS updates of rider movement, pickups, and delivery progress  
+- **ETA Predictions** – Dynamic ETA calculation based on route distance, speed, and real-world conditions  
+- **Smart Dispatch** – Automatic rider assignment based on proximity, availability, fee, and reliability rating  
+- **Order Lifecycle Management** – Structured states from Order → Confirmation → Preparation → Pickup → Delivery → Rating  
+- **Secure Payment Workflow** – Customer → Restaurant → Rider pipeline with automated fee deduction and payout logic  
+- **Real-Time Chat & Calls** – In-app messaging and optional temporary contact sharing between all roles  
+- **Scalable Architecture** – Modular backend with real-time event handling, ready for high load and multi-role usage  
 
-🟣 ETA Predictions
+---
 
-Smart time calculations based on distance + speed
+## 🧩 Role Capabilities  
 
-Delays + traffic signals
+### 🏪 Restaurants / Vendors  
+- Register and manage vendor profile  
+- Add, edit, or remove food/menu items  
+- View and confirm customer orders  
+- Select riders and view their delivery fees  
+- Communicate with customers and riders via chat/call  
+- Confirm pickup and update order status  
+- Receive payments; handle automatic rider payout deductions  
+- Rate riders after successful delivery  
 
-🟠 Dispatch Algorithm
+### 🛍️ Customers  
+- Sign up, log in, and manage profile  
+- Search restaurants and menu items  
+- Place orders and choose delivery options  
+- Chat with restaurants or riders  
+- Track rider location and delivery status in real time  
+- Make secure payments in-app  
+- Receive live updates through the order lifecycle  
+- Rate restaurants post-delivery  
 
-Auto-assign riders based on:
+### 🛵 Riders  
+- Create rider account and manage profile  
+- Browse and accept delivery requests (from restaurants or customers)  
+- Input delivery fee, get order and customer/restaurant details  
+- Confirm pickups and update delivery status (on-the-way → delivered)  
+- Communicate with customers or restaurants through chat/call  
+- Receive delivery payments and rate customers  
 
-Availability
+---
 
-Distance
+## 🏛️ Architecture Overview  
 
-Rider pricing
+**Frontend**  
+Separate user interfaces tailored for Restaurants, Customers, and Riders.
 
-Reliability score
+**Backend Services**  
+- Authentication & Authorization  
+- Order Service (handles order lifecycle)  
+- Dispatch Engine (assign riders intelligently)  
+- Tracking & Real-Time Communication (via WebSockets)  
+- Payment Service (handles transactions, payouts, deductions)  
 
-🟢 Order Lifecycle
-Created → Confirmed → Preparing → Rider Assigned 
-→ Picked Up → On The Way → Delivered → Rated
+**Database Models**  
+Users (with roles), Menus, Orders, Payments, Ratings, Tracking logs.
 
-💰 Payment Workflow
+This modular architecture ensures scalability, maintainability, and responsiveness for real-time demands.
 
-Customer → Restaurant
+---
 
-Restaurant → Rider
+## 🎯 Why Fleetora?  
 
-Automatic rider fee deductions
+Fleetora demonstrates the full breadth and complexity of building a modern logistics/delivery platform — from real-time tracking and dispatching to secure payments and multi-role coordination.  
 
-Verification + confirmation screens
+It’s a showcase of:  
+- Real-world system thinking and architecture  
+- Full-stack design with front-end, back-end, communication, payment flows  
+- Scalability, modularity, and readiness for production or growth  
 
-🗨️ Real-Time Communication
+---
 
-Restaurant ↔ Customer
+## 📈 What’s Next / Roadmap  
 
-Customer ↔ Rider
+- 📦 Define and implement full folder structure (backend + frontend)  
+- 📄 Build API documentation (e.g. Swagger / OpenAPI)  
+- 🧪 Write unit/integration tests for critical services  
+- 🎨 Add UI/UX mocks or screenshots  
+- 🔧 Implement auth, dispatch, tracking, payment, and communication modules  
+- 🌍 Prepare for multi-region or multi-city deployment  
 
-Secure temporary number sharing
+---
 
-In-app chat + call triggers
+## 📝 License  
 
-🏗️ Demanding Architecture
-
-WebSockets for live updates
-
-Modular services
-
-High-performance routing engine
-
-Multi-role authentication
-Login
-
-Delete account
-
-Edit name / password reset
-
-Browse available orders (from restaurants and customers)
-
-Accept customer or restaurant delivery orders
-
-Input delivery charge
-
-Receive customer details for communication
-
-Confirm pickup
-
-Update status (On The Way → Delivered)
-
-Receive payments
-
-Rate customers
-
-Real-time communication with restaurant or customer
-
-System Architecture Overview
-
-Although the backend/frontend stack isn’t specified yet, the system is designed to support:
-
-Microservice or modular monolith structure
-
-WebSocket server for real-time tracking and chat
-
-Order service handling state transitions
-
-Payment service with verification and ledger logic
-
-Rider dispatch service with price and distance calculations
-
-Authentication service for all roles
-
-Database models for restaurants, customers, riders, menus, orders, payments
-
-Project Goal
-
-To deliver a robust, production-grade logistics platform capable of supporting:
-
-Food delivery
-
-Courier services
-
-Vendor-to-customer logistics
-
-Multi-role real-time interactions
-
-The system is engineered to be scalable and extendable, making it suitable for startups, academic demonstrations, and large product prototypes.
+This project is released under the **MIT License**.  
 
