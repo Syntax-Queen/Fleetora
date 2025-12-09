@@ -1,177 +1,84 @@
 # Fleetora
-This project is a full-scale logistics and delivery platform designed to operate at the level of modern on-demand delivery apps like Uber Eats, DoorDash, or Glovo. It supports a three-sided marketplace — Restaurants/Vendors, Customers, and Riders — with real-time operations, automated dispatching, and a complete order-to-delivery workflow.
+🚀 Fleetora – Real-Time Logistics & Food Delivery Platform
 
-The application is built with a demanding architecture optimized for speed, reliability, and scalability, supporting real-time communication, dynamic pricing, and continuous order tracking.
+A full-scale, Uber Eats level multi-role delivery ecosystem.
 
-Core Features
-1. Real-Time Driver Tracking
+<p align="center"> <img src="https://img.shields.io/badge/Platform-Logistics%20%2F%20Delivery-blue.svg" /> <img src="https://img.shields.io/badge/Status-In%20Development-orange.svg" /> <img src="https://img.shields.io/badge/Tech-Real%20Time%20Tracking-success.svg" /> <img src="https://img.shields.io/badge/Architecture-High%20Demanding-critical.svg" /> </p>
 
-Drivers are tracked live through GPS, allowing customers and restaurants to see:
+🌍 Overview
 
-Driver’s live location
+Fleetora is a powerful, real-time logistics and food delivery platform designed to operate at the same complexity level as Uber Eats, DoorDash, and Glovo.
 
-Movement updates
+It supports a three-sided marketplace:
 
-Pick-up and delivery progress
+🏪 Restaurants/Vendors
 
-2. ETA Predictions
+🛍️ Customers
 
-The platform calculates estimated arrival times using:
+🛵 Riders
 
-Driver speed
+The system includes real-time GPS tracking, automated dispatch, dynamic route updates, secure chat, full payment workflow, and a robust order lifecycle.
+
+⚡ Core Features
+🔵 Real-Time Tracking
+
+Live GPS movement
+
+Driver progress updates
+
+Delivery status in real time
+
+🟣 ETA Predictions
+
+Smart time calculations based on distance + speed
+
+Delays + traffic signals
+
+🟠 Dispatch Algorithm
+
+Auto-assign riders based on:
+
+Availability
 
 Distance
 
-Traffic patterns
-
-Delay factors
-
-3. Dispatch Algorithm
-
-The system automatically assigns riders based on:
-
-Distance to restaurant
-
-Rider availability
-
 Rider pricing
 
-Historical reliability
+Reliability score
 
-Delivery load balancing
+🟢 Order Lifecycle
+Created → Confirmed → Preparing → Rider Assigned 
+→ Picked Up → On The Way → Delivered → Rated
 
-4. Multi-step Order States
-
-Every order moves through a lifecycle:
-
-Created
-
-Confirmed
-
-Preparing
-
-Rider Assigned
-
-Picked Up
-
-On The Way
-
-Delivered
-
-Rated
-
-All states update live for customers, restaurants, and riders.
-
-5. Payment Workflow
-
-Complete payment lifecycle including:
+💰 Payment Workflow
 
 Customer → Restaurant
 
 Restaurant → Rider
 
-Rider earnings breakdown
+Automatic rider fee deductions
 
-Automatic deduction logic
+Verification + confirmation screens
 
-In-app confirmation for all parties
+🗨️ Real-Time Communication
 
-6. Secure Messaging & Calls
+Restaurant ↔ Customer
 
-Each role gets:
+Customer ↔ Rider
 
-Real-time chat
+Secure temporary number sharing
 
-Secure, temporary phone-share system
+In-app chat + call triggers
 
-Communication between restaurant ↔ customer ↔ rider
+🏗️ Demanding Architecture
 
-7. Highly Demanding Architecture
+WebSockets for live updates
 
-This project covers advanced system behavior:
+Modular services
 
-WebSockets / Real-time communication
+High-performance routing engine
 
-Complex routing logic
-
-High availability and fast response design patterns
-
-Modular role-based dashboards and experiences
-
-Role-Based Flows
-
-The platform has unique interfaces and operations for the three core roles.
-
-Restaurant / Vendor Features
-
-Sign up
-
-Login
-
-Delete account
-
-Edit name / password reset
-
-Post food items
-
-Edit food posts
-
-Delete food posts
-
-View customer orders
-
-Chat with customers and riders
-
-Accept payments from customers
-
-Deduct rider payment
-
-View available riders nearby with prices
-
-Confirm orders
-
-Update customer when rider arrives for pickup
-
-Connect rider to customer with one click
-
-Rate riders
-
-Customer Features
-
-Sign up
-
-Login
-
-Delete account
-
-Edit name / password reset
-
-Search for menu items
-
-Place orders
-
-Choose delivery mode:
-
-Rider picks up from restaurant
-
-Restaurant handles rider selection
-
-Chat with restaurant / rider
-
-Real-time rider tracking
-
-Make payment
-
-See order movement stages
-
-Receive notifications when order is picked and on the way
-
-Rate restaurants
-
-Rider Features
-
-Sign up
-
+Multi-role authentication
 Login
 
 Delete account
