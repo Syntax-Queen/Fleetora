@@ -32,7 +32,7 @@
 
 Fleetora is a modern, high-performance logistics and food-delivery platform designed to operate at the same level as leading apps like Uber Eats, DoorDash and Glovo. It handles a three-sided marketplace enabling real-time coordination among **Restaurants**, **Customers**, and **Riders**.
 
-The platform brings together live driver tracking, smart dispatching, full lifecycle order management, secure payments, and real-time communication — all built for speed, reliability, and scale.
+The platform brings together live driver tracking, smart dispatching, full lifecycle order management, secure payments, and real time communication  all built for speed, reliability, and scale.
 
 ---
 
@@ -57,7 +57,7 @@ The platform brings together live driver tracking, smart dispatching, full lifec
 - Select riders and view their delivery fees  
 - Communicate with customers and riders via chat/call  
 - Confirm pickup and update order status  
-- Receive payments; handle automatic rider payout deductions  
+- Receive payments handle automatic rider payout deductions  
 - Rate riders after successful delivery  
 
 ### 🛍️ Customers  
@@ -68,7 +68,7 @@ The platform brings together live driver tracking, smart dispatching, full lifec
 - Track rider location and delivery status in real time  
 - Make secure payments in-app  
 - Receive live updates through the order lifecycle  
-- Rate restaurants post-delivery  
+- Rate restaurants post delivery  
 
 ### 🛵 Riders  
 - Create rider account and manage profile  
