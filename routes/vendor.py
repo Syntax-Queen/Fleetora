@@ -1,7 +1,7 @@
 from app import app
 from flask import jsonify, request
 
-from models import vendor, db
+from models import Vendor, db
 from toolz import validate_email
 
 @app.route('/vendors', methods=['POST'])
@@ -35,3 +35,4 @@ def signup():
     except Exception as e:
         db.session.rollback()
         return jsonify({'message': 'Registration failed', 'error': str(e)}), 500    
+
