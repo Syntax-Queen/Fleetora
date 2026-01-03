@@ -8,3 +8,7 @@ def validate_email(email):
     return re.match(pattern, email) is not None
 
 
+    # generate a random number for the token
+def random_generator(size=6, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
+    

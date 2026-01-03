@@ -54,3 +54,12 @@ class StoredjwtToken(db.Model):
     jwt_token = db.Column(db.String(255), unique=True, nullable=True)
     user_id = db.Column(db.Integer, nullable=True)
        
+       
+       
+   
+class PasswordResetToken(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    token = db.Column(db.String(10), nullable=False)
+    user_id = db.Column(db.Integer, nullable=False)
+    used = db.Column(db.Boolean, nullable=False, default=False)
+    generated_at = db.Column(db.DateTime, nullable=False, default=lambda: datetime.now(timezone.utc))
