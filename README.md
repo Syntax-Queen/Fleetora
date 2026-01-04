@@ -39,7 +39,7 @@ The platform brings together live driver tracking, smart dispatching, full lifec
 ## ⚡ Core Features  
 
 - **Real-Time Tracking** – Live GPS updates of rider movement, pickups, and delivery progress  
-- **ETA Predictions** – Dynamic ETA calculation based on route distance, speed, and real-world conditions  
+- **ETA Predictions** – Dynamic ETA calculation based on route distance, speed, and real world conditions  
 - **Smart Dispatch** – Automatic rider assignment based on proximity, availability, fee, and reliability rating  
 - **Order Lifecycle Management** – Structured states from Order → Confirmation → Preparation → Pickup → Delivery → Rating  
 - **Secure Payment Workflow** – Customer → Restaurant → Rider pipeline with automated fee deduction and payout logic  
@@ -95,13 +95,13 @@ Separate user interfaces tailored for Restaurants, Customers, and Riders.
 **Database Models**  
 Users (with roles), Menus, Orders, Payments, Ratings, Tracking logs.
 
-This modular architecture ensures scalability, maintainability, and responsiveness for real-time demands.
+This modular architecture ensures scalability, maintainability, and responsiveness for real time demands.
 
 ---
 
 ## 🎯 Why Fleetora?  
 
-Fleetora demonstrates the full breadth and complexity of building a modern logistics/delivery platform — from real-time tracking and dispatching to secure payments and multi-role coordination.  
+Fleetora demonstrates the full breadth and complexity of building a modern logistics/delivery platform  from real-time tracking and dispatching to secure payments and multi-role coordination.  
 
 It’s a showcase of:  
 - Real-world system thinking and architecture  
