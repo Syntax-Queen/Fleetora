@@ -134,3 +134,32 @@ def delete_user(did):
     db.session.delete(user)
     db.session.commit()
     return jsonify({'done': True, 'Message': f'{user.name} Account deleted successfully'})
+
+
+# edit username and password 
+
+@app.route('/vendors/<int:vendor_id>', methods=['PUT'])
+def update_vendor(vendor_id):
+    data = request.json
+
+    vendor = Vendor.query.get(vendor_id)
+    if not vendor:
+        return jsonify({'message': 'Vendor not found'}), 404
+
+    name = data.get('name')
+    password = data.get('password')
+
+    if name:
+        if len(name) < 3:
+            return jsonify({'message': 'Name must be at least 3 characters long'}), 400
+        vendor.name = name
+
+    if password:
+        vendor.set_password(password)
+
+    try:
+        db.session.commit()
+        return jsonify({'message': 'Vendor updated successfully'}), 200
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'message': 'Update failed', 'error': str(e)}), 500
