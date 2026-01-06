@@ -30,7 +30,7 @@
 
 ## 🌍 Overview  
 
-Fleetora is a modern, high-performance logistics and food-delivery platform designed to operate at the same level as leading apps like Uber Eats, DoorDash and Glovo. It handles a three-sided marketplace enabling real-time coordination among **Restaurants**, **Customers**, and **Riders**.
+Fleetora is a modern, high-performance logistics and food-delivery platform designed to operate at the same level as leading apps like Uber Eats, DoorDash and Glovo. It handles a three-sided marketplace enabling real time coordination among **Restaurants**, **Customers**, and **Riders**.
 
 The platform brings together live driver tracking, smart dispatching, full lifecycle order management, secure payments, and real time communication  all built for speed, reliability, and scale.
 
