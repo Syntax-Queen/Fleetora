@@ -24,7 +24,6 @@ class Vendor(db.Model):
         payload ={
             'id': self.id,
             'exp': expiration_time,
-            # 'role': self.role
         }
         
         token = jwt.encode(payload, os.environ.get('SECRET_KEY'), algorithm='HS256')
