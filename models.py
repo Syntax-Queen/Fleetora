@@ -14,6 +14,9 @@ class Vendor(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, onupdate=datetime.utcnow)
 
+    def __repr__(self):
+        return f" < User {self.email} >"
+
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
@@ -21,7 +24,7 @@ class Vendor(db.Model):
         return check_password_hash(self.password_hash, password)
     
     def generate_auth_token(self):
-        expiration_time = datetime.now() + datetime.timedelta(days=10)
+        expiration_time = datetime.now() + timedelta(days=10)
         payload ={
             'id': self.id,
             'exp': expiration_time,
@@ -62,4 +65,4 @@ class PasswordResetToken(db.Model):
     token = db.Column(db.String(10), nullable=False)
     user_id = db.Column(db.Integer, nullable=False)
     used = db.Column(db.Boolean, nullable=False, default=False)
-    generated_at = db.Column(db.DateTime, nullable=False, default=lambda: datetime.now(timezone.utc))
+    generated_at = db.Column(db.DateTime, nullable=False, default=datetime.now)

@@ -40,7 +40,7 @@ def signup():
 
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/vendor-login', methods=['POST'])
 @cross_origin()
 def login():
     data = request.json
@@ -74,7 +74,7 @@ def login():
 
 
 # forget password
-@app.route('/forget-password', methods=['POST'])
+@app.route('/vendor-forget-password', methods=['POST'])
 def forgot_password():
     email = request.json.get('email')
     
@@ -96,7 +96,7 @@ def forgot_password():
     return jsonify({'success': True, 'message': 'Password reset email sent'}), 200
 
 # reset password
-@app.route('/reset-password', methods=['POST'])
+@app.route('/vendor-reset-password', methods=['POST'])
 def reset_password():
     token = request.json.get('token')
     new_password = request.json.get('new_password')
